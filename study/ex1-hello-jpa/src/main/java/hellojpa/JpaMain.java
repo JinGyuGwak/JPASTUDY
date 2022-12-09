@@ -6,7 +6,6 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 public class JpaMain {
-
     public static void main(String[] args) {
         EntityManagerFactory emf =
                 Persistence.createEntityManagerFactory("hello");
@@ -16,10 +15,10 @@ public class JpaMain {
         tx.begin();
         //code
         try{
-            Member member = em.find(Member.class, 150L);
-            member.setName("AAAAA");
+            Member member= new Member();
+            member.setUsername("C");
 
-            System.out.println("===============");
+            em.persist(member);
             tx.commit();
         }   catch(Exception e){
             tx.rollback();
