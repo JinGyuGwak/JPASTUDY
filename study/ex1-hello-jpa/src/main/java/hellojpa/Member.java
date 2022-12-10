@@ -5,22 +5,26 @@ import java.util.Date;
 
 @Entity
 public class Member {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    @Id @GeneratedValue
+    @Column(name="MEMBER_ID")
+    private Long id;
 
-    @Column(name = "name")
+    @Column(name = "USERNAME")
     private String username;
 
-   public Member(){
+//    @Column(name = "TEAM_ID")
+//    private Long teamId;
 
-   }
+    @ManyToOne
+    @JoinColumn(name="TEAM_ID")
+    private Team team;
+    //Member입장에서는 자신이 many team 입장에서는 자신이 1임
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -30,5 +34,13 @@ public class Member {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
     }
 }
