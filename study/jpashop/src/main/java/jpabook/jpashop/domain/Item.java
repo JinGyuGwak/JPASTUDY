@@ -12,7 +12,7 @@ public class Item {
     @Column(name = "ITEM_ID")
     private Long Id;
 
-    private String name;
+    private String name ;
     private int price;
     private int stockQuantity;
 
