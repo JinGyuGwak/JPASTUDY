@@ -19,6 +19,10 @@ public class Member {
     private Team team;
     //Member입장에서는 자신이 many team 입장에서는 자신이 1임
 
+    @OneToOne
+    @JoinColumn(name = "LOCkER_ID")
+    private Locker locker;
+
     public Long getId() {
         return id;
     }
