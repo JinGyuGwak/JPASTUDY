@@ -12,8 +12,7 @@ public class MemberProduct {
     private Member member;
 
     @ManyToOne
-    @JoinColumn(name="")
+    @JoinColumn(name="memberProducts")
     private Product product;
-
 
 }
