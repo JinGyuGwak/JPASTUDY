@@ -4,7 +4,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -16,21 +15,19 @@ public class JpaMain {
         tx.begin();
         //code
         try{
-            Movie movie = new Movie();
-            movie.setActor("aaaa");
-            movie.setName("bbb");
-            movie.setDirector("abcd");
-            movie.setPrice(10000);
 
-            em.persist(movie);
+            Member member = new Member();
+            member.setUsername("hello");
+
+            em.persist(member);
 
             em.flush();
             em.clear();
 
-            Movie findMovie = em.find(Movie.class, movie.getId());
-            System.out.println("findmovie = " + findMovie);
-
-
+            //
+            Member findMember = em.find(Member.class, member.getId());
+            System.out.println("findMember = " + findMember.getId());
+            System.out.println("findMember.username = " + findMember.getUsername());
 
             tx.commit();
         }   catch(Exception e){
@@ -39,5 +36,18 @@ public class JpaMain {
             em.close();
         }
         emf.close();
+    }
+
+    private static void printMember(Member member) {
+        System.out.println("member = " + member.getUsername());
+    }
+
+    private static void printMemberAndTeam(Member member) {
+        String username = member.getUsername();
+        System.out.println("username = " + username);
+
+        Team team = member.getTeam();
+        System.out.println("team = " + team.getName());
+
     }
 }

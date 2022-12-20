@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Member {
+public class Member extends BaseEntity{
     @Id @GeneratedValue
     @Column(name="MEMBER_ID")
     private Long id;
@@ -21,12 +21,12 @@ public class Member {
     private Team team;
     //Member입장에서는 자신이 many team 입장에서는 자신이 1임
 
-    @OneToOne
-    @JoinColumn(name = "LOCkER_ID")
-    private Locker locker;
-
-    @OneToMany(mappedBy = "member")
-    private List<MemberProduct> memberProducts = new ArrayList<>();
+//    @OneToOne
+//    @JoinColumn(name = "LOCkER_ID")
+//    private Locker locker;
+//
+//    @OneToMany(mappedBy = "member")
+//    private List<MemberProduct> memberProducts = new ArrayList<>();
 
     public Long getId() {
         return id;
