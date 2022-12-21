@@ -16,23 +16,21 @@ public class JpaMain {
         tx.begin();
         //code
         try{
-            Team team = new Team();
-            team.setName("teamA");
-            em.persist(team);
+            Address address = new Address("city", "street", "10000");
 
             Member member1 = new Member();
             member1.setUsername("member1");
+            member1.setHomeAddress(address);
             em.persist(member1);
 
+            Address copyAddress = new Address(address.getCity(), address.getStreet(), address.getZipcode());
 
-            member1.setTeam(team);
+            Member member2 = new Member();
+            member2.setUsername("member2");
+            member2.setHomeAddress(copyAddress);
+            em.persist(member2);
 
-            em.flush();
-            em.clear();
-
-
-            List<Member> members = em.createQuery("select m from Member m join fetch m.team", Member.class).getResultList();
-
+            member1.getHomeAddress().setCity("newCity");
 
             tx.commit();
         }   catch(Exception e){
@@ -43,16 +41,5 @@ public class JpaMain {
         emf.close();
     }
 
-    private static void printMember(Member member) {
-        System.out.println("member = " + member.getUsername());
-    }
 
-    private static void printMemberAndTeam(Member member) {
-        String username = member.getUsername();
-        System.out.println("username = " + username);
-
-        Team team = member.getTeam();
-        System.out.println("team = " + team.getName());
-
-    }
 }
