@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07bc8bc1-bc80-4910-bfb7-43b10b608396" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/.idea/artifacts/ex1_hello_jpa_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/.idea/artifacts/ex1_hello_jpa_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/ValueMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/ValueMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +100,7 @@
       <workItem from="1671268496182" duration="707000" />
       <workItem from="1671517091948" duration="2254000" />
       <workItem from="1671533654934" duration="389000" />
+      <workItem from="1671639415584" duration="312000" />
     </task>
     <servers />
   </component>
