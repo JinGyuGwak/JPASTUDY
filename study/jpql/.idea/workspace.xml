@@ -5,62 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57ccfdb1-22de-4794-bc6e-b2010a6a1d99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/MemberDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/JpaMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Album.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Delivery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/DeliveryStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/java/jpabook/jpashop/domain/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/JpaMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Album.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Delivery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/DeliveryStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/OrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpashop/target/classes/jpabook/jpashop/domain/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,21 +39,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/JPASTUDY/study/jpql/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JPASTUDY/study/jpql/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JPASTUDY\study\jpql\src\main\resources" />
@@ -142,6 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671679156329</updated>
       <workItem from="1671679157650" duration="7153000" />
+      <workItem from="1675193886095" duration="33000" />
+      <workItem from="1675197807377" duration="8976000" />
     </task>
     <servers />
   </component>

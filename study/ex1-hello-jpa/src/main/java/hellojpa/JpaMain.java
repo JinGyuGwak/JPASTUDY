@@ -19,7 +19,12 @@ public class JpaMain {
         tx.begin();
         //code
         try{
+            Member member = new Member();
+            member.setUsername("member1");
+            em.persist(member);
 
+            //DBConnection.executeQuery("select * from member");
+            //결과 없음
 
             tx.commit();
         }   catch(Exception e){
