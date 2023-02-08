@@ -108,7 +108,7 @@ public class OrderRepository {
 
     public List<Order> findAllWithItem() {
         return em.createQuery(
-                        "select distinct o from Order o" +
+                        "select distinct o from Order o" + //order가 같으면 중복을 제거
                                 " join fetch o.member m" +
                                 " join fetch o.delivery d" +
                                 " join fetch o.orderItems oi" +
@@ -125,5 +125,4 @@ public class OrderRepository {
                 .setMaxResults(limit)
                 .getResultList();
     }
-
 }

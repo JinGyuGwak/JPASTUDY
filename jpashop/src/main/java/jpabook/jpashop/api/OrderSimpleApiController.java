@@ -22,13 +22,13 @@ public class OrderSimpleApiController {
     private final OrderRepository orderRepository;
     private final OrderSimpleQueryRepository orderSimpleQueryRepository;
 
-    @GetMapping("/api/v1/simple-orders")
+    @GetMapping("/api/v1/simple-orders") // 엔티티 직접 노출
     public List<Order> ordersV1(){ //엔티티반환은 원래 하면 안 됨
         List<Order> all = orderRepository.findAllByString(new OrderSearch());
         return all;
     }
 
-    @GetMapping("/api/v2/simple-orders")
+    @GetMapping("/api/v2/simple-orders") // 엔티티를 DTO로 변환
     public List<SimpleOrderDto> ordersV2(){
         List<Order> orders = orderRepository.findAllByString(new OrderSearch());
 //        List<SimpleOrderDto> result = orders.stream()
@@ -43,7 +43,7 @@ public class OrderSimpleApiController {
     }
 
 
-    @GetMapping("/api/v3/simple-orders")
+    @GetMapping("/api/v3/simple-orders") // 엔티티를 DTO로 변환 후 페치조인 최적화
     public List<SimpleOrderDto> ordersV3(){
         List<Order> orders = orderRepository.findAllWithMemberDelivery();
 //        List<SimpleOrderDto> result = orders.stream()
@@ -56,7 +56,7 @@ public class OrderSimpleApiController {
         }
         return result;
     }
-    @GetMapping("/api/v4/simple-orders")
+    @GetMapping("/api/v4/simple-orders") //JPA에서 DTO로 바로 조회
     public List<OrderSimpleQueryDto> ordersV4(){
         return orderSimpleQueryRepository.findOrderDtos();
     }
