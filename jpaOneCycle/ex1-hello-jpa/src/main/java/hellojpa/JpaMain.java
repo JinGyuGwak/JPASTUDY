@@ -15,16 +15,12 @@ public class JpaMain {
         tx.begin();
 
         try{
-            //비영속 상태
-            Member member1 = new Member(4L,"Hello");
-            Member member2 = new Member(5L, "B");
+            Member member = new Member();
+            em.persist(member);
 
-            //영속 상태
-            em.persist(member1);
-            em.persist(member2);
+            em.flush();
 
-
-
+            System.out.println("====================");
             tx.commit();
         } catch (Exception e){
             tx.rollback();
