@@ -1,4 +1,6 @@
-package hellojpa;
+package jpabook.jpashop;
+
+
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,22 +17,7 @@ public class JpaMain {
         tx.begin();
 
         try{
-            Member member = new Member();
-            member.setUsername("A");
-            member.setAge(30);
-            member.setRoleType(RoleType.ADMIN);
 
-            Member member1 = new Member();
-            member1.setUsername("B");
-            member1.setAge(20);
-            member1.setRoleType(RoleType.ADMIN);
-
-            em.persist(member);
-            em.persist(member1);
-
-
-//            em.flush();
-            System.out.println("플러시 됨");
             tx.commit();
         } catch (Exception e){
             tx.rollback();
