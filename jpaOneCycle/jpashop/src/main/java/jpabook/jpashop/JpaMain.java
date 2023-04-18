@@ -45,7 +45,7 @@ public class JpaMain {
 
 //            Order or = em.find(Order.class,order1.getId());
             List<Order> orders = em.createQuery("select o from Order o", Order.class)
-                            .getResultList();
+                    .getResultList();
 
             tx.commit();
         } catch (Exception e){
