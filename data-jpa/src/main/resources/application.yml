@@ -10,8 +10,8 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
+        show_sql: true
         format_sql: true
-        #show_sql: true -> JPA 가 실행하는 쿼리를 터미널에 다 찍음
 logging:
   level:
     org.hibernate.sql : debug
