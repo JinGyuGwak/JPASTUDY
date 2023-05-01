@@ -160,7 +160,7 @@ class MemberRepositoryTest {
         member5.setAge(50);
         int resultCount = memberRepository.bulkAgePlus(20);
 
-        member5.setAge(50); //영속성 컨텍스트에 있는 member5의 age값을 50으로 바꿈
+        member5.setAge(45); //영속성 컨텍스트에 있는 member5의 age값을 50으로 바꿈
 
         em.flush();
         em.clear();
@@ -170,6 +170,40 @@ class MemberRepositoryTest {
         System.out.println("result = " + result.getAge());
 
         assertThat(resultCount).isEqualTo(3);
+    }
+    @Test
+    public void findMemberLazy(){
+        Team teamA = new Team("teamA");
+        Team teamB = new Team("teamB");
+        teamRepository.save(teamA);
+        teamRepository.save(teamB);
+        Member member1 = new Member("member1", 10, teamA);
+        Member member2 = new Member("member2", 10, teamB);
+        Member member3 = new Member("member3", 10, teamB);
+        memberRepository.save(member1);
+        memberRepository.save(member2);
+        memberRepository.save(member3);
 
+        em.flush();
+        em.clear();
+
+        List<Member> members = memberRepository.findAll();
+
+        for (Member member : members) {
+            System.out.println("member = " + member.getUsername());
+            System.out.println("member.getTeam().getName() = " + member.getTeam().getName());
+        }
+    }
+    @Test
+    public void queryHint(){
+        Member member1 = new Member("member1", 10);
+        memberRepository.save(member1);
+        em.flush();
+        em.clear();
+
+        Member findMember = memberRepository.findById(member1.getId()).get();
+        findMember.setUsername("member2");
+
+        em.flush();
     }
 }
