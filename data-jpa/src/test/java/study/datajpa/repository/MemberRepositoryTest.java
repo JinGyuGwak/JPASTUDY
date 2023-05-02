@@ -25,6 +25,7 @@ import static org.assertj.core.api.Assertions.*;
 @Rollback(false)
 class MemberRepositoryTest {
 
+    @Autowired MemberQueryRepository memberQueryRepository;
     @Autowired MemberRepository memberRepository;
     @Autowired TeamRepository teamRepository;
 
@@ -206,4 +207,18 @@ class MemberRepositoryTest {
 
         em.flush();
     }
+    @Test
+    public void callCustom(){
+        Member member1 = new Member("member1", 10);
+        Member member2 = new Member("member2", 10);
+        Member member3 = new Member("member3", 10);
+        memberRepository.save(member1);
+        memberRepository.save(member2);
+        memberRepository.save(member3);
+        List<Member> result = memberRepository.findMemberCustom();
+        List<Member> allMembers = memberQueryRepository.findAllMembers();
+        System.out.println("allMembers = " + allMembers);
+    }
+
+
 }
